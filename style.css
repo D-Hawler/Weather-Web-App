@@ -1,0 +1,94 @@
+:root {
+    --border-color: rgb(0, 0, 0);
+    --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    --body-color: rgb(214, 213, 213);
+    --main-color-white: rgb(255, 255, 255);
+
+    --header-height: 100px;
+    --header-color: rgb(104, 130, 158);
+
+
+/* #598234 Луг
+
+#aebd38 Мох
+
+#68829e Водопад
+
+#505160 Грозовая */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+/* satrted config */
+
+
+body {
+    background-color: var(--body-color);
+}
+
+
+
+
+
+
+
+header {
+    width: 100%;
+    height: var(--header-height);
+
+    background-color: var(--header-color);
+    border-bottom: 2px solid var(--border-color);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+section {
+    padding: 100px;
+}
+
+section > div:first-child {
+    padding: 10px 20px;
+
+    background-color: var(--main-color-white);
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+section > div:last-child {
+    width: min-content;
+    margin-top: 20px;
+    
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px 10px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 15px;
+
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+button:active {
+    transform: scale(0.9);
+}
