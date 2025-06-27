@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <script src="./mainScript.js" defer></script>
+    <script src="./mainScript.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <title>Weather</title>
 </head>
 <body>
     <main>
         <header></header>
         <section>
-            <div></div>
             <div>
-                <label for="city">Enter a city to find out what the weather is like there:</label>
-                <input type="text" id="city" name="city">
-                <button id="search">Enter</button>
+            </div>
+            <div>
+                <div>
+                    <label for="city">Enter a city to find out what the weather is like there:</label>
+                    <input type="text" id="city" name="city">
+                    <button id="search">Enter</button>
+                </div>
+                <button></button>
             </div>
         </section>
     </main>
